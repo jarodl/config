@@ -1,6 +1,7 @@
 set nocompatible		      " don't act like vi
 set history=1000		      " a lot of command line history
 set ffs=unix,dos,mac		  " support these files
+call pathogen#runtime_append_all_bundles()
 filetype plugin indent on	  " load the filetype plugin
 set modeline			      " make sure modeline support is enabled
 set autoread			      " reload files (no local changes only)
