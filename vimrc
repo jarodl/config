@@ -3,6 +3,7 @@ set history=1000		      " a lot of command line history
 set ffs=unix,dos,mac		  " support these files
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on	  " load the filetype plugin
+
 set modeline			      " make sure modeline support is enabled
 set autoread			      " reload files (no local changes only)
 set tabpagemax=50		      " max of 50 tabs
@@ -75,6 +76,7 @@ set virtualedit=block      " allow virtual edit in visual block ..
 " ----------------------------------------------------------------------------
 
 map <C-t> :FufFile<CR>      " Find a file quickly
+map <D-/> ,c<space>         " toggle comment state
 
 " ---------------------------------------------------------------------------
 "  sh config
@@ -95,4 +97,3 @@ au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
 " close an open tag by pressing Ctrl + Shift + Underscore
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
 au Filetype ruby		   set tw=80  ts=2
-

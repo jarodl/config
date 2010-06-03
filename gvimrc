@@ -4,6 +4,7 @@
 "
 winpos 0 0
 colorscheme twilight
+" colorscheme vividchalk
 
 set gfn=DejaVu\ Sans\ Mono:h12
 set anti               			" antialiasing
