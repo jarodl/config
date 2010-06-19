@@ -3,10 +3,9 @@
 " -----------------------------------------------------------
 "
 winpos 0 0
-colorscheme twilight
-" colorscheme vividchalk
+colorscheme cobalt
 
-set gfn=DejaVu\ Sans\ Mono:h12
+set gfn=Monaco:13
 set anti               			" antialiasing
 set guioptions=gemc
 set columns=80
@@ -16,8 +15,7 @@ set ch=4
 
 set clipboard+=unnamed			" put the * register on the system clipboard
 
-" fullscreen mode
-":set fuoptions=maxvert,maxhorz
+set fuoptions=maxvert,maxhorz   " real fullscreen mode
 
 " -----------------------------------------------------------
 "  Highlight Trailing Whitespace
