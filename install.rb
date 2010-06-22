@@ -19,6 +19,7 @@ end
 Link[ 'vimrc', '.vimrc' ]
 Link[ 'gvimrc', '.gvimrc' ]
 Link[ 'vim', '.vim' ]
+Link[ 'zshrc', '.zshrc' ]
 
 Git = V do |command, dir|
   Dir.chdir(dir) do

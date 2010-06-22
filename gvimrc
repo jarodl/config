@@ -3,21 +3,22 @@
 " -----------------------------------------------------------
 "
 winpos 0 0
-colorscheme twilight
-" colorscheme vividchalk
+colorscheme molokai
 
-set gfn=DejaVu\ Sans\ Mono:h12
+set gfn=Monaco:12
 set anti               			" antialiasing
 set guioptions=gemc
 set columns=80
-set lines=60                    " perfect for 1440x900
+set lines=90
 set cursorline                  " show the current line by highlighting it
 set ch=4
+set linespace=2
+
+let mapleader=","
 
 set clipboard+=unnamed			" put the * register on the system clipboard
 
-" fullscreen mode
-":set fuoptions=maxvert,maxhorz
+set fuoptions=maxvert,maxhorz   " real fullscreen mode
 
 " -----------------------------------------------------------
 "  Highlight Trailing Whitespace

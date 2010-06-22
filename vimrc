@@ -1,4 +1,8 @@
 set nocompatible		      " don't act like vi
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/Jarod/Projects/vim'
+let g:netrw_dirhist_2='/Users/Jarod/Projects/vim/.git'
 set history=1000		      " a lot of command line history
 set ffs=unix,dos,mac		  " support these files
 call pathogen#runtime_append_all_bundles()
@@ -44,7 +48,6 @@ set nostartofline          " don't jump to the start of line when scrolling
 set showmatch              " brackets/braces that is
 set mat=5                  " duration to show matching brace (1/10 sec)
 set incsearch              " do incremental searching
-set hlsearch               " highlight search
 set laststatus=2           " always show the status line
 set ignorecase             " ignore case when searching
 set visualbell             " shut the heck up
