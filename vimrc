@@ -62,6 +62,7 @@ let g:explHideFiles='^\.,.*\.sw[po]$,.*\.pyc$'
 " Text Formatting
 " ----------------------------------------------------------------------------
 
+set syntax=on
 set autoindent             " automatic indent new lines
 set smartindent            " be smart about it
 set nowrap                 " do not wrap lines
@@ -71,7 +72,7 @@ set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " tabs can get the heck out
 set formatoptions+=n       " support for numbered/bullet lists
-set textwidth=78           " leave a little room for 80 cols
+set textwidth=80           " leave a little room for 80 cols
 set virtualedit=block      " allow virtual edit in visual block ..
 
 " ----------------------------------------------------------------------------
@@ -96,6 +97,8 @@ au BufRead,BufNewFile *.ru         set ft=ruby
 au BufRead,BufNewFile *.haml       set ft=haml
 au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.c          set ft=c tw=80 ts=4 sw=4 expandtab
+au BufRead,BufNewFile *.go         set ft=go
 
 " close an open tag by pressing Ctrl + Shift + Underscore
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
