@@ -3,7 +3,7 @@
 " -----------------------------------------------------------
 "
 winpos 0 0
-colorscheme molokai
+colorscheme railscasts
 
 set gfn=Monaco:12
 set anti               			" antialiasing

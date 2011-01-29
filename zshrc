@@ -57,6 +57,10 @@ alias p='cd ~/Projects'
 alias w='cd ~/Sites'
 alias h='cd ~'
 
+alias m='make'
+alias mc='make clean'
+alias mr='make clean && make && find . -type f -perm -o+rx | sh'
+
 # Git specific
 alias gitrm='git ls-files --deleted | xargs git rm'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -148,6 +152,5 @@ RPROMPT=$'$(vcs_info_wrapper)'
 
 
 export PS1="
-${PINK}%n ${D}on ${ORANGE}%M ${D}in ${GREEN}%~
+${PINK}%n ${GREEN}%~
 ${PINK}>${D} "
-
