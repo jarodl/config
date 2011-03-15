@@ -58,8 +58,9 @@ function djg {
 }
 
 alias v='mvim'
-alias p='cd ~/Projects'
-alias w='cd ~/Sites'
+alias clns='cd ~/Code/Clones'
+alias p='cd ~/Code/Projects'
+alias w='cd ~/Code/Work'
 alias h='cd ~'
 
 alias m='make'
@@ -91,9 +92,6 @@ alias sc='./script/console'
 alias ss='./script/server'
 alias sg='./script/generate'
 
-# Disqus specific
-alias disqus='cd ~/Sites && workon disqus'
-
 # JavaScript
 alias rhino='java -jar /usr/share/java/js.jar'
 
@@ -110,21 +108,14 @@ alias start_redis='redis-server /usr/local/etc/redis.conf'
 # PATHS
 # ------------------------------------------------------------------------
 
-export WORKON_HOME="/Users/Jarod/.virtualenvs/"
-export PATH=$PATH:$HOME/clojure/leiningen/
-
-# Flex
-export PATH=$PATH:/Developer/SDKs/flex_sdk_4.1.0/bin/
-
-# FUTURE NOTICE:
-# Had to edit this script to stop an egrep warning
+export WORKON_HOME="$HOME/.virtualenvs/"
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Add Disqus Django build to python path
-export PYTHONPATH=${PYTHONPATH}:/Users/Jarod/Sites/disqus/trunk/django_root/
+# export PYTHONPATH=${PYTHONPATH}:/Users/Jarod/Sites/disqus/trunk/django_root/
 
 # Add Clojure contrib
-export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.1.0/clojure-contrib.jar
+# export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.1.0/clojure-contrib.jar
 
 # ------------------------------------------------------------------------
 # PROMPT
