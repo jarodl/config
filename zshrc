@@ -52,6 +52,11 @@ function mksite {
   git commit -m "initial commit"
 }
 
+function djg {
+  django-admin.py startproject $1
+  mkprj $1
+}
+
 alias v='mvim'
 alias p='cd ~/Projects'
 alias w='cd ~/Sites'
