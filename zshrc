@@ -111,8 +111,10 @@ alias start_redis='redis-server /usr/local/etc/redis.conf'
 export WORKON_HOME="$HOME/.virtualenvs/"
 source /usr/local/bin/virtualenvwrapper.sh
 
-# Add Disqus Django build to python path
-# export PYTHONPATH=${PYTHONPATH}:/Users/Jarod/Sites/disqus/trunk/django_root/
+PATH=$PATH:/Users/Jarod/.gem/ruby/1.8/bin
+export PATH
+
+export PYTHONPATH=/Users/Jarod/Code/Projects:$PYTHONPATH
 
 # Add Clojure contrib
 # export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.1.0/clojure-contrib.jar
@@ -121,11 +123,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # PROMPT
 # ------------------------------------------------------------------------
 #
-
-D=$'\e[37;40m'
-PINK=$'\e[35;40m'
-GREEN=$'\e[32;40m'
-ORANGE=$'\e[33;40m'
 
 setopt prompt_subst
 autoload -Uz vcs_info
@@ -146,7 +143,10 @@ vcs_info_wrapper() {
 }
 RPROMPT=$'$(vcs_info_wrapper)'
 
-
 export PS1="
-${PINK}%n ${GREEN}%~
-${PINK}>${D} "
+%n in %~
+> "
+
+# rvm
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # Thi
+# source ~/.cinderella.profile
